@@ -1,0 +1,74 @@
+
+update UIRLOCH
+set UIRLOCH_LOCH_date = to_date('15-apr-2007','dd-mon-yyyy')
+where UIRLOCH_prem_code = '4301073'
+and   UIRLOCH_INVN_CODE = '6304356' 
+and UIRLOCH_LOCH_date = to_date('12-may-2007','dd-mon-yyyy')
+/
+
+update UIRLOCH
+set UIRLOCH_LOCH_date = to_date('01-jan-1999','dd-MON-yyyy')
+where UIRLOCH_prem_code = '3115363'
+and   UIRLOCH_INVN_CODE = '4067777'
+and   UIRLOCH_user_id = 'CCAPPUCC'
+/
+
+select * from uirloch
+where uirloch_invn_code = '4067777'
+and to_char(UIRLOCH_LOCH_date,'dd-mon-yyyy')  = '25-jul-2007'
+/
+
+select * from uirloch
+where uirloch_invn_code = '6055313'
+and   UIRLOCH_prem_code = 4070049
+/
+
+
+update UIRLOCH
+set uirloch_REAS_CODE = 'DOWN'
+where uirloch_invn_code = '6717303'
+and   UIRLOCH_user_id = 'DSABOURI'
+/
+
+update UIRLOCH
+set uirloch_REAS_CODE = 'RETI'
+where uirloch_invn_code = '2384619'
+and   UIRLOCH_user_id = 'DSABOURI'
+/
+
+update UIRLOCH
+set uirloch_REAS_CODE = 'DOWN'
+where uirloch_invn_code = '4007954'
+and   UIRLOCH_user_id = 'UEADMIN'
+/
+
+
+update UIRLOCH
+set uirloch_REAS_CODE = 'OHED'
+where uirloch_invn_code = '6054087'
+and   UIRLOCH_user_id = 'VSCOTT'
+/
+
+update UIRLOCH
+set uirloch_REAS_CODE = 'WARR'
+where uirloch_invn_code = 'GP1121'
+and   UIRLOCH_user_id = 'DSABOURI'
+/
+
+update UIRLOCH
+set uirloch_REAS_CODE = 'UPGR'
+where uirloch_invn_code = '6626649'
+and   UIRLOCH_user_id = 'DSABOURI'
+/
+
+update UIRLOCH
+set uirloch_REAS_CODE = 'RETL'
+where uirloch_invn_code = '2287920'
+and   UIRLOCH_user_id = 'DSABOURI'
+/
+
+update UIRLOCH
+set uirloch_REAS_CODE = 'DOWN'
+where uirloch_invn_code = '2585313'
+and   UIRLOCH_user_id = 'DSABOURI'
+/
